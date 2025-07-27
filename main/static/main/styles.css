@@ -604,3 +604,6 @@ html {
     height: 300px;
     width: 100%;
 }
+.hero.d-flex.align-items-center {
+  padding-top: 100px !important;
+}
