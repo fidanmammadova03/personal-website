@@ -1,0 +1,229 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Why I Try Even When It Feels Small</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f0fa;
+      color: #3d2b56;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    .title {
+      text-align: center;
+      padding: 80px 20px 40px;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: #4b306a;
+      letter-spacing: 0.5px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease;
+    }
+
+    .title.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section {
+      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+      max-width: 1400px;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section.alt {
+      background-color: #ede4f7;
+    }
+
+    .text-block, .image-block {
+      flex: 1 1 500px;
+      max-width: 600px;
+    }
+
+    .text-block h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #4b306a;
+    }
+
+    .text-block p {
+      font-size: 1.08rem;
+      line-height: 1.85;
+      margin-bottom: 25px;
+      color: #4a3c59;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.1rem;
+      border-left: 3px solid #b296d3;
+      padding: 16px 24px;
+      margin: 30px 0;
+      background: #f2e8fb;
+      border-radius: 0 6px 6px 0;
+      color: #5a447a;
+    }
+
+    .image-block {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      height: 450px;
+    }
+
+    .image-block img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        padding: 40px 15px;
+      }
+
+      .title {
+        font-size: 2rem;
+        padding-top: 60px;
+      }
+
+      .text-block h2 {
+        font-size: 1.4rem;
+      }
+
+      .image-block {
+        height: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title" id="page-title">Why I Try Even When It Feels Small</div>
+
+  <!-- Section 1 -->
+  <section class="section alt">
+    <div class="text-block">
+      <p>Sometimes we let things go too fast. A broken product, a missed refund, a no from someone who barely listened. We say it is okay, maybe it was meant to be, or maybe I just got unlucky. But honestly, most of the time it is not about luck. It is about trying again.</p>
+      <p>There are so many small things I could have ignored. But I didn’t. And the result was often better than I expected. Not always perfect. But better than silence.</p>
+    </div>
+    <div class="image-block">
+      <img src="{% static 'main/blogimgs/tryanyway/silent.png' %}" alt="Broken product">
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="section">
+    <div class="image-block">
+      <img src="{% static 'main/blogimgs/tryanyway/brokenproduct.png' %}" alt="Broken product">
+    </div>
+    <div class="text-block">
+      <h2>Even a Broken Package Matters</h2>
+      <p>I once ordered something online. It came damaged. I almost said it is fine, not worth the stress. But then I thought no, I paid for it, I deserve what I paid for. So I wrote, explained, and asked for a return. It worked. They replaced it without hesitation. And that small win gave me more confidence in the next situation.</p>
+      <p>Sometimes people respond when you ask calmly but clearly. You just have to show up. Even if it is a small thing.</p>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="section alt">
+    <div class="text-block">
+      <h2>One Story That Stuck With Me</h2>
+      <p>A friend of mine needed to get university attendance permission for work reasons. She applied, but her GPA was not high enough, and her subject was not considered eligible because it was a major course. They rejected it immediately. Most people would stop there. She didn’t. She told herself she would try again, just in case.</p>
+      <p>She went back with a clearer message, showed how her work and studies could balance, and asked the dean directly. And she got it. That moment taught me something. Even when people say no, they are still people. They can change their mind. You just need the right approach and a bit of patience.</p>
+    </div>
+    <div class="image-block">
+      <img src="{% static 'main/blogimgs/tryanyway/student.png' %}" alt="Broken product">
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section class="section">
+    <div class="image-block">
+      <img src="{% static 'main/blogimgs/tryanyway/result.png' %}" alt="Broken product">
+    </div>
+    <div class="text-block">
+      <h2>The Point Is Not Just Winning</h2>
+      <p>Not every try brings a result. But most of them bring something. A small change. A moment of clarity. A better next step. When you keep choosing action over silence, it becomes a habit. You stop being afraid of no. Because you know that trying has power in itself.</p>
+      <div class="quote">"Trying is not weakness. It is you respecting yourself enough to ask again."</div>
+    </div>
+  </section>
+
+  <!-- Section 5 -->
+  <section class="section alt">
+    <div class="text-block">
+      <h2>It Adds Up</h2>
+      <p>Small decisions to speak up, to return something broken, to write that email again. These are not just tasks. They shape how you see yourself. I am not someone who gives up easily. That identity is built through these everyday moments. And the more I lean into it, the more I feel grounded in who I am.</p>
+      <p>So I try. Even if it feels small. Because small things add up. And most of the time, they lead to bigger wins than you expect.</p>
+    </div>
+    <div class="image-block">
+      <img src="{% static 'main/blogimgs/tryanyway/email.png' %}" alt="Broken product">
+    </div>
+  </section>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const title = document.getElementById('page-title');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+    observer.observe(title);
+  </script>
+<section class="section visible">
+  <div style="max-width: 600px; margin-left: auto; text-align: right;">
+    <a href="/" style="
+        display: inline-block;
+        font-size: 1.05rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        background: #7e3ff2;
+        border: none;
+        padding: 12px 22px;
+        box-shadow: 0 6px 16px rgba(126, 63, 242, 0.3);
+        transition: background 0.3s ease;
+    " onmouseover="this.style.background='#6931cc'" onmouseout="this.style.background='#7e3ff2'">
+      ← Back to Portfolio
+    </a>
+  </div>
+</section>
+
+
+
+</body>
+</html>
