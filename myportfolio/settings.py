@@ -46,7 +46,6 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 ALLOWED_HOSTS = [
     'byfidan.com',
     'www.byfidan.com',
-    'personal-website-kpl2.onrender.com'
 ]
 
 DATABASES = {
