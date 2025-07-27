@@ -43,3 +43,10 @@ SECRET_KEY = 'django-insecure-$3cr3t-k3y-for-dev-1234567890'
 STATICFILES_DIRS = [BASE_DIR / "main" / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
+ALLOWED_HOSTS = ['byfidan.com', 'www.byfidan.com']
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
