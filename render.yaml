@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: myportfolio
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --no-input
+    startCommand: gunicorn myportfolio.wsgi:application
+
+    static:
+      - source: staticfiles
+        target: /static
