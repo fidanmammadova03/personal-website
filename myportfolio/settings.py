@@ -11,7 +11,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',  # your app
 ]
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = []
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
