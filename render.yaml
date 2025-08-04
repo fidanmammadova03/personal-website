@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: myportfolio
+    name: personal-website
     env: python
     buildCommand: |
       pip install -r requirements.txt
