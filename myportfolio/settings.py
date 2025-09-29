@@ -46,6 +46,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 ALLOWED_HOSTS = [
     'byfidan.com',
     'www.byfidan.com',
+    '127.0.0.1'
 ]
 
 DATABASES = {
