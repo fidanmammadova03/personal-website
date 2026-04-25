@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: myportfolio
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn myportfolio.wsgi:application
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: your-app-name.onrender.com,www.your-app-name.onrender.com
+      - key: DEBUG
+        value: false

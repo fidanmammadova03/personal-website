@@ -5,21 +5,17 @@
 <!-- Hero Section - Added id="home" -->
 <section id="home" class="hero d-flex align-items-center min-vh-100">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-xl-8 col-lg-10 text-center hero-text glass animate-fade">
-        <h1 class="display-4 fw-bold mb-4">This isn’t just a website. This is a reflection.</h1>
-        <p class="lead fs-5 mb-4">
-          A quiet corner of the internet where thoughts breathe,<br>
-          where data becomes meaning, and work becomes a whisper of soul.<br><br>
-
-          Built by <span class="text-purple fw-semibold">Fidan</span> - not just a data analyst, but a seeker of patterns<br>
-          in numbers, in people, in the pauses between both.<br><br>
-
-          You’re welcome to explore. To feel. To think. To stay a while.
-        </p>
-        <div class="hero-buttons mt-4">
-          <a href="#projects" class="btn btn-primary btn-lg px-4 me-3">View Projects</a>
-          <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contact Me</a>
+    <div class="row justify-content-start align-items-center min-vh-100">
+      <div class="col-lg-6">
+        <div class="animate-fade">
+          <h1>Data & Business Analyst</h1>
+          <p class="hero-subtitle mb-4">
+            I help businesses turn sales, pricing, stock, and product data into clear decisions using Python, SQL, dashboards, and automation.
+          </p>
+          <div class="hero-buttons mt-4">
+            <a href="#projects" class="btn btn-primary btn-lg px-4 me-3">View Projects</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contact Me</a>
+          </div>
         </div>
       </div>
     </div>
@@ -33,40 +29,48 @@
 <section id="about" class="about"> 
     <div class="container">
         <h2 class="section-title">About Me</h2>
-        <div class="row align-items-center">
-            <div class="col-lg-5 mb-5 mb-lg-0">
-                <img src="{% static 'main/my_images/me3.jpg' %}" alt="Profile" class="img-fluid rounded">
+        <div class="row align-items-start">
+            <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2 about-image-col">
+                <img src="{% static 'main/my_images/me3.jpg' %}" alt="Fidan Mammadova, Data and Business Analyst specializing in e-commerce analytics" class="img-fluid rounded about-profile-img">
             </div>
-            <div class="col-lg-7">
-                <h3 class="mb-3">Data Analyst | Python Developer | ML Engineer | Data Visualization Specialist</h3>
+            <div class="col-lg-6 order-lg-1">
                 <p class="lead">
-                    I’m a data analyst with a strong foundation in data processing, automation, and visualization. I transform complex datasets into actionable insights to support smarter decisions - with clarity, accuracy, and purpose.
+                    I’m Fidan, a Data & Business Analyst focused on e-commerce analytics, pricing, and product performance.
                 </p>
                 <p>
-                    Since December 2023, I have been working remotely with <strong>Vigo Industries</strong>, a U.S.-based manufacturer of premium kitchen and bathroom fixtures (<a href="https://vigoindustries.com" target="_blank">vigoindustries.com</a>). At Vigo, I support the analytics operations behind their e-commerce strategy, working with data from platforms such as Amazon and Wayfair to ensure consistency, performance tracking, and streamlined reporting.
+                    My work is about understanding what’s happening in the business and making it easier to act on. I use data to connect operations, pricing, stock, and performance so decisions are clear and practical.
                 </p>
                 <p>
-                    I hold a Bachelor's degree in Computer Science from Khazar University and will pursue my Master's in Intelligent Systems there from Sep. 2025. I am deeply engaged in solving data problems using tools like Python, SQL, Tableau, and Streamlit, and I enjoy building elegant dashboards and automations that simplify business workflows.
+                    Since December 2023, I’ve been working with <strong>VIGO Industries</strong>, supporting analytics across partners like Amazon, Wayfair, Lowe’s, and Home Depot. I analyze sales, pricing, stock, and performance data to identify issues and opportunities, and help structure that into clear reporting.
+                </p>
+                <p>
+                    I build dashboards, automate repetitive data tasks, and work with different data sources to keep reporting consistent.
+                </p>
+                <p>
+                    I have a Bachelor’s degree in Computer Science from Khazar University and I’m currently pursuing a Master’s in Intelligent Systems. I’m interested in applying AI to business problems, especially in areas like pricing and decision-making.
+                </p>
+                <p>
+                    I mainly work with Python and SQL, and build analytical workflows with Power BI, Tableau, Streamlit, and modern data libraries.
                 </p>
 
                 <div class="skills mt-4">
-                    <span class="skill-badge">Python Programming</span>
-                    <span class="skill-badge">Object-Oriented Programming (OOP)</span>
-                    <span class="skill-badge">Streamlit</span>
-                    <span class="skill-badge">Microsoft Excel</span>
-                    <span class="skill-badge">SQL (MySQL, Oracle SQL Developer)</span>
-                    <span class="skill-badge">Data Analysis</span>
-                    <span class="skill-badge">Data Visualization</span>
-                    <span class="skill-badge">Machine Learning</span>
-                    <span class="skill-badge">Tableau</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">SQL</span>
                     <span class="skill-badge">Power BI</span>
-                    <span class="skill-badge">Web Scraping</span>
-                    <span class="skill-badge">Amazon Seller Central</span>
-                    <span class="skill-badge">Microsoft Office Suite</span>
-                    <span class="skill-badge">Analytical Thinking</span>
-                    <span class="skill-badge">Problem Solving</span>
-                    <span class="skill-badge">Research & Insight Generation</span>
+                    <span class="skill-badge">Tableau</span>
+                    <span class="skill-badge">Streamlit</span>
+                    <span class="skill-badge">pandas</span>
+                    <span class="skill-badge">NumPy</span>
+                    <span class="skill-badge">Plotly</span>
                     <span class="skill-badge">Django</span>
+                    <span class="skill-badge">AWS / Cloud Analytics</span>
+                    <span class="skill-badge">Data Automation</span>
+                    <span class="skill-badge">E-commerce Analytics</span>
+                    <span class="skill-badge">Dashboarding</span>
+                    <span class="skill-badge">Reporting</span>
+                    <span class="skill-badge">Amazon Seller Central</span>
+                    <span class="skill-badge">Pricing Analytics</span>
+                    <span class="skill-badge">KPI Tracking</span>
                 </div>
             </div>
         </div>
@@ -80,7 +84,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="project-card">
-                    <img src="{% static 'main/projectimgs/project1.jpg' %}" alt="project1" class="img-fluid rounded">
+                    <img src="{% static 'main/projectimgs/project1.jpg' %}" alt="Sales forecasting Python project using Random Forest machine learning model" class="img-fluid rounded">
                     <div class="project-content">
                         <h4>Sales Forecasting with Random Forest</h4>
                         <p>Built a prediction model using real-world sales data. Cleaned and preprocessed it, tested 3 models, picked the best one, and predicted sales for new weeks.</p>
@@ -89,14 +93,14 @@
                             <span class="project-tag">pandas</span>
                             <span class="project-tag">scikit-learn</span>
                         </div>
-                        <a href="https://github.com/fidanmammadova03/sales-forecasting-python" target="_blank" class="btn btn-outline-purple mt-3">View on GitHub</a>
+                        <a href="https://github.com/fidanmammadova03/sales-forecasting-python" target="_blank" class="btn btn-outline-accent mt-3">View on GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="project-card">
-                    <img src="{% static 'main/projectimgs/project2.jpg' %}" alt="project2" class="img-fluid rounded">
+                    <img src="{% static 'main/projectimgs/project2.jpg' %}" alt="Price optimization Python project using XGBoost for e-commerce pricing strategy" class="img-fluid rounded">
                     <div class="project-content">
                         <h4>Price Optimization with XGBoost</h4>
                         <p>Built a model that predicts product demand and simulates optimal pricing to maximize profit. Used XGBoost and simulated price ranges with safety checks to choose the best price for each SKU.</p>
@@ -105,14 +109,14 @@
                             <span class="project-tag">XGBoost</span>
                             <span class="project-tag">Pricing</span>
                         </div>
-                        <a href="https://github.com/fidanmammadova03/price-optimization-python" target="_blank" class="btn btn-outline-purple mt-3">View on GitHub</a>
+                        <a href="https://github.com/fidanmammadova03/price-optimization-python" target="_blank" class="btn btn-outline-accent mt-3">View on GitHub</a>
                     </div>
                 </div>
             </div>
 
            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="project-card">
-                    <img src="{% static 'main/projectimgs/project3.jpg' %}" alt="project3" class="img-fluid rounded">
+                    <img src="{% static 'main/projectimgs/project3.jpg' %}" alt="Sales dashboard Python application with SQL database and Plotly visualizations" class="img-fluid rounded">
                     <div class="project-content">
                         <h4>Sales Dashboard with Python</h4>
                         <p>Designed a dynamic dashboard using Python and SQL to track sales trends, conversion rates, and performance insights across multiple e-commerce platforms. Supports both dark and light modes.</p>
@@ -122,7 +126,7 @@
                             <span class="project-tag">Plotly</span>
                             <span class="project-tag">Django</span>
                         </div>
-                        <a href="/projects/sales-dashboard/" class="btn btn-outline-purple mt-3">View Details</a>
+                        <a href="/projects/sales-dashboard/" class="btn btn-outline-accent mt-3">View Details</a>
                     </div>
                 </div>
             </div>
@@ -133,38 +137,44 @@
 </section>
 
 <!-- Work Section -->
-<section id="Work" class="work py-5">
+<section id="work" class="work py-5">
     <div class="container">
         <h2 class="section-title mb-5">Current Position</h2>
         
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="work-content p-4 rounded">
-                    <h3 class="mb-4">Data Analyst at Vigo Industries</h3>
-                    <p class="lead">Transforming raw data into actionable insights for premium kitchen and bathroom solutions.</p>
+                    <h3 class="mb-4">Data & Business Analyst at VIGO Industries</h3>
+                    <p class="lead">Working on e-commerce performance, pricing, and product-level analytics across major retail partners (Amazon, Wayfair, Lowe’s, Home Depot). Focus is on connecting data with business decisions, not just reporting.</p>
                     
                     <div class="work-details mt-4">
                         <h5 class="d-flex align-items-center">
-                            <i class="fas fa-tasks me-3 text-purple"></i>Key Responsibilities
+                            <i class="fas fa-tasks me-3 text-accent"></i>Key Responsibilities
                         </h5>
                         <ul class="mt-3">
-                            <li>Analyzing e-commerce performance across Amazon, Wayfair, and other platforms</li>
-                            <li>Developing automated reporting pipelines using Python and SQL</li>
-                            <li>Creating data visualizations to track product performance and sales trends</li>
-                            <li>Resolving product attribute discrepancies across multiple sales channels</li>
-                            <li>Implementing data quality checks to ensure reporting accuracy</li>
+                            <li>Analyzing sales, pricing, stock, and conversion to understand what’s driving performance</li>
+                            <li>Identifying risks and opportunities across SKUs, categories, and channels</li>
+                            <li>Supporting pricing and promotional decisions based on data and partner dynamics</li>
+                            <li>Tracking KPI trends and building structured reporting used in daily operations</li>
+                            <li>Investigating drops or spikes in sales and explaining root causes (price, stock, visibility, etc.)</li>
+                            <li>Aligning data across systems and platforms to ensure consistent decision-making</li>
                         </ul>
                         
                         <h5 class="d-flex align-items-center mt-4">
-                            <i class="fas fa-cogs me-3 text-purple"></i>Technologies Used
+                            <i class="fas fa-cogs me-3 text-accent"></i>Tools & Technologies
                         </h5>
                         <div class="tech-badges mt-3">
                             <span class="skill-badge">Python</span>
                             <span class="skill-badge">SQL</span>
+                            <span class="skill-badge">Power BI</span>
                             <span class="skill-badge">Tableau</span>
                             <span class="skill-badge">Streamlit</span>
+                            <span class="skill-badge">pandas</span>
+                            <span class="skill-badge">Plotly</span>
+                            <span class="skill-badge">Django</span>
+                            <span class="skill-badge">Power Query</span>
                             <span class="skill-badge">Amazon Seller Central</span>
-                            <span class="skill-badge">Microsoft Office</span>
+                            <span class="skill-badge">Data Automation</span>
                         </div>
                     </div>
                 </div>
@@ -214,7 +224,7 @@
                     </div>
                     
                     <div class="text-center mt-4">
-                        <a href="https://vigoindustries.com" target="_blank" class="btn btn-outline-purple">
+                        <a href="https://vigoindustries.com" target="_blank" class="btn btn-outline-accent">
                             <i class="fas fa-external-link-alt me-2"></i>Explore Vigo Products
                         </a>
                     </div>
@@ -225,7 +235,7 @@
 </section>
 
 <!-- Blogs Section - Removed py-5 class -->
-<section id="Blogs" class="blogs py-5">
+<section id="blogs" class="blogs py-5">
     <div class="container">
         <h2 class="section-title mb-5">My Journal of Thoughts, Emotions, and Honest Moments</h2>
 
@@ -242,7 +252,66 @@
             <!-- Blog Slider -->
             <div class="blog-slider-container overflow-hidden">
                 <div class="blog-slider d-flex" id="blogSlider">
-                    <!-- Blog cards will be loaded here via JavaScript -->
+                    <div class="blog-slide">
+                        <div class="blog-card h-100">
+                            <img src="{% static 'main/blogimgs/tryanyway/try.png' %}" class="blog-img" alt="Try Anyway blog post about not letting small things slide">
+                            <div class="blog-content">
+                                <h5>Try Anyway: Why I Don’t Let Things Slide Anymore</h5>
+                                <p>Even if it feels small, I’ve learned not to let things go too easily. A broken item, a missed detail... it all matters more than we think.</p>
+                                <a href="/blogs/tryanyway/" target="_blank" class="btn btn-outline-accent">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide">
+                        <div class="blog-card h-100">
+                            <img src="{% static 'main/blogimgs/healthylife/food.png' %}" class="blog-img" alt="Blog post about quitting sugar, bread and fast food and the transformations">
+                            <div class="blog-content">
+                                <h5>Why I Quit Sugar, Bread & Fast Food? And What Happened</h5>
+                                <p>A personal journey of cutting sugar, bread, and fast food - the physical and mental transformations that followed.</p>
+                                <a href="/blogs/cutsugar/" target="_blank" class="btn btn-outline-accent">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide">
+                        <div class="blog-card h-100">
+                            <img src="{% static 'main/blogimgs/remsleep/rem.png' %}" class="blog-img" alt="Blog about learning to enter REM sleep in 20 minutes with tips and techniques">
+                            <div class="blog-content">
+                                <h5>How I Learned to Enter REM Sleep in 20 Minutes</h5>
+                                <p>An experiment in sleep hacking: tips, science, and techniques I used to reach deep sleep faster.</p>
+                                <a href="/blogs/remsleep/" target="_blank" class="btn btn-outline-accent">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide">
+                        <div class="blog-card h-100">
+                            <img src="{% static 'main/blogimgs/lettinggo/letgo.png' %}" class="blog-img" alt="Blog post about learning to be OK without fixing everything">
+                            <div class="blog-content">
+                                <h5>Learning to Be OK Without Fixing Everything</h5>
+                                <p>Some things are better left alone. Here's how I stopped fixing everything and found peace in the middle of the mess.</p>
+                                <a href="/blogs/beingok/" target="_blank" class="btn btn-outline-accent">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide">
+                        <div class="blog-card h-100">
+                            <img src="{% static 'main/blogimgs/idea/idea.png' %}" class="blog-img" alt="Blog about what if that idea was meant for you">
+                            <div class="blog-content">
+                                <h5>What If That Idea Was Meant for You?</h5>
+                                <p>Not every thought is random. Sometimes the idea you get is a gift - a sign to act, create, or lead. And if you don’t, someone else might.</p>
+                                <a href="/blogs/idea/" target="_blank" class="btn btn-outline-accent">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide">
+                        <div class="blog-card h-100">
+                            <img src="{% static 'main/blogimgs/books/books.png' %}" class="blog-img" alt="Blog about going from hating books to loving them">
+                            <div class="blog-content">
+                                <h5>How I Went from Hating Books to Loving Them</h5>
+                                <p>I used to argue that books were a waste of time. Then I found the kind that made sense to me... and it changed everything.</p>
+                                <a href="/blogs/books/" target="_blank" class="btn btn-outline-accent">Read More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -250,164 +319,81 @@
 </section>
 
 <script>
-    const blogData = [
-                {
-            id: 1,
-            title: "Try Anyway: Why I Don’t Let Things Slide Anymore",
-            image: "/static/main/blogimgs/tryanyway/try.png",
-            short: "Even if it feels small, I’ve learned not to let things go too easily. A broken item, a missed detail... it all matters more than we think.",
-            link: "/blogs/tryanyway/"
-        },
-        {
-            id: 2,
-            title: "Why I Quit Sugar, Bread & Fast Food? And What Happened",
-            image: "/static/main/blogimgs/healthylife/food.png",
-            short: "A personal journey of cutting sugar, bread, and fast food - the physical and mental transformations that followed.",
-            link: "/blogs/cutsugar/"
-        },
-        {
-            id: 3,
-            title: "How I Learned to Enter REM Sleep in 20 Minutes",
-            image: "/static/main/blogimgs/remsleep/rem.png",
-            short: "An experiment in sleep hacking: tips, science, and techniques I used to reach deep sleep faster.",
-            link: "/blogs/remsleep/"
-        },
-        {
-            id: 4,
-            title: "Learning to Be OK Without Fixing Everything",
-            image: "/static/main/blogimgs/lettinggo/letgo.png",
-            short: "Some things are better left alone. Here's how I stopped fixing everything and found peace in the middle of the mess.",
-            link: "/blogs/beingok/"
-        },
-        {
-            id: 5,
-            title: "What If That Idea Was Meant for You?",
-            image: "/static/main/blogimgs/idea/idea.png",
-            short: "Not every thought is random. Sometimes the idea you get is a gift - a sign to act, create, or lead. And if you don’t, someone else might.",
-            link: "/blogs/idea/"
-        },
-        {
-            id: 6,
-            title: "How I Went from Hating Books to Loving Them",
-            image: "/static/main/blogimgs/books/books.png",
-            short: "I used to argue that books were a waste of time. Then I found the kind that made sense to me... and it changed everything.",
-            link: "/blogs/books/"
-        }
-    ];
-
-
-    let currentPosition = 0;
-
-    function renderBlogSlider() {
-        const slider = document.getElementById('blogSlider');
-        slider.innerHTML = '';
-
-        blogData.forEach(blog => {
-            slider.innerHTML += `
-                <div class="blog-slide">
-                    <div class="blog-card h-100">
-                        <img src="${blog.image}" class="blog-img" alt="${blog.title}">
-                        <div class="blog-content">
-                            <h5>${blog.title}</h5>
-                            <p>${blog.short}</p>
-                            <a href="${blog.link}" target="_blank" class="btn btn-outline-purple">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            `;
-        });
-    }
-
-
-
-    function getSlideWidth() {
-        return document.querySelector('.blog-slide')?.offsetWidth || 0;
-    }
-
-    function getVisibleSlides() {
-        return window.innerWidth < 768 ? 1 : 3;
-    }
-
-    function updateSliderTransform() {
-        document.getElementById('blogSlider').style.transform = `translateX(${currentPosition}px)`;
-    }
-
-    function initBlogSlider() {
-        renderBlogSlider();
-        const slider = document.getElementById('blogSlider');
+    document.addEventListener('DOMContentLoaded', function() {
         const container = document.querySelector('.blog-slider-container');
+        const slider = document.getElementById('blogSlider');
         const nextBtn = document.querySelector('.next-arrow');
         const prevBtn = document.querySelector('.prev-arrow');
 
-        const slideWidth = getSlideWidth();
-        const visibleSlides = getVisibleSlides();
+        if (!container || !slider || !nextBtn || !prevBtn) return;
 
-        // Clone first and last few slides for seamless looping
-        const slides = document.querySelectorAll('.blog-slide');
-        for (let i = 0; i < visibleSlides; i++) {
-            slider.appendChild(slides[i].cloneNode(true)); // clone start to end
-            slider.insertBefore(slides[slides.length - 1 - i].cloneNode(true), slider.firstChild); // clone end to start
+        const originalSlides = Array.from(slider.querySelectorAll('.blog-slide'));
+        const visibleSlides = window.innerWidth < 768 ? 1 : 3;
+        const cloneCount = Math.min(visibleSlides, originalSlides.length);
+        const gap = 24;
+        const slideWidth = originalSlides[0].getBoundingClientRect().width + gap;
+
+        for (let i = originalSlides.length - cloneCount; i < originalSlides.length; i++) {
+            const clone = originalSlides[i].cloneNode(true);
+            clone.classList.add('clone');
+            slider.insertBefore(clone, slider.firstChild);
         }
 
-        let positionIndex = visibleSlides; // Start from real first
-        updateSliderTransform();
+        for (let i = 0; i < cloneCount; i++) {
+            const clone = originalSlides[i].cloneNode(true);
+            clone.classList.add('clone');
+            slider.appendChild(clone);
+        }
 
-        function updateSliderTransform(animate = true) {
-            if (!animate) {
-                slider.style.transition = 'none';
-            } else {
-                slider.style.transition = 'transform 0.4s ease';
+        const startScroll = slideWidth * cloneCount;
+        container.scrollLeft = startScroll;
+
+        let isJumping = false;
+
+        function adjustInfiniteScroll() {
+            if (isJumping) return;
+            const totalSlides = originalSlides.length;
+            const maxScroll = slideWidth * (totalSlides + cloneCount);
+
+            if (container.scrollLeft <= slideWidth * 0.5) {
+                isJumping = true;
+                container.scrollLeft = container.scrollLeft + totalSlides * slideWidth;
+                requestAnimationFrame(() => { isJumping = false; });
+            } else if (container.scrollLeft >= maxScroll - slideWidth * 0.5) {
+                isJumping = true;
+                container.scrollLeft = container.scrollLeft - totalSlides * slideWidth;
+                requestAnimationFrame(() => { isJumping = false; });
             }
-            slider.style.transform = `translateX(${-positionIndex * slideWidth}px)`;
         }
 
         nextBtn.addEventListener('click', () => {
-            positionIndex++;
-            updateSliderTransform();
-
-            // Seamless reset to real start
-            setTimeout(() => {
-                if (positionIndex >= slides.length + visibleSlides) {
-                    positionIndex = visibleSlides;
-                    updateSliderTransform(false);
-                }
-            }, 400);
+            container.scrollBy({ left: slideWidth, behavior: 'smooth' });
         });
 
         prevBtn.addEventListener('click', () => {
-            positionIndex--;
-            updateSliderTransform();
+            container.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+        });
 
-            // Seamless reset to real end
-            setTimeout(() => {
-                if (positionIndex < 0) {
-                    positionIndex = slides.length - 1;
-                    updateSliderTransform(false);
-                }
-            }, 400);
+        container.addEventListener('scroll', () => {
+            window.clearTimeout(container._scrollTimeout);
+            container._scrollTimeout = window.setTimeout(adjustInfiniteScroll, 120);
         });
 
         window.addEventListener('resize', () => {
-            currentPosition = 0;
-            updateSliderTransform(false);
+            container.scrollLeft = startScroll;
         });
-    }
-
-
-
-    initBlogSlider();
-
+    });
 </script>
 
 <!-- Services Section - Removed py-5 class -->
- <section id="Services" class="services py-5">
+ <section id="services" class="services py-5">
     <div class="container">
         <h2 class="section-title mb-5">Professional Services</h2>
         <div class="row g-4">
             <div class="col-lg-4 col-md-6">
                 <div class="service-card text-center h-100">
                     <div class="service-icon mx-auto">
-                        <i class="fas fa-chart-bar fa-3x text-purple"></i>
+                        <i class="fas fa-chart-bar fa-3x text-accent"></i>
                     </div>
                     <h4 class="my-4">Data Analysis</h4>
                     <p>Turn complex data into clear business insights. I analyze and interpret large datasets to identify trends, measure performance, and support strategic decision-making across departments.</p>
@@ -421,7 +407,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="service-card text-center h-100">
                     <div class="service-icon mx-auto">
-                        <i class="fas fa-robot fa-3x text-purple"></i>
+                        <i class="fas fa-robot fa-3x text-accent"></i>
                     </div>
                     <h4 class="my-4">Automation Solutions</h4>
                     <p>Boost efficiency and reduce manual workload with tailored automation systems. I design scalable Python-based workflows that streamline data operations, reporting, and third-party integrations.</p>
@@ -435,7 +421,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="service-card text-center h-100">
                     <div class="service-icon mx-auto">
-                        <i class="fas fa-chart-pie fa-3x text-purple"></i>
+                        <i class="fas fa-chart-pie fa-3x text-accent"></i>
                     </div>
                     <h4 class="my-4">Data Visualization</h4>
                     <p>Transform raw data into clear, interactive visuals that drive decision-making. I build intuitive dashboards and visual analytics tools to help teams explore trends and monitor performance at a glance.</p>
@@ -449,7 +435,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="service-card text-center h-100">
                     <div class="service-icon mx-auto">
-                        <i class="fas fa-store fa-3x text-purple"></i>
+                        <i class="fas fa-store fa-3x text-accent"></i>
                     </div>
                     <h4 class="my-4">Amazon Seller Central Management</h4>
                     <p>Professional management of your Amazon business, including listing optimization, advertising, inventory, and brand compliance. I help sellers scale effectively using Amazon’s tools and best practices.</p>
@@ -464,7 +450,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="service-card text-center h-100">
                     <div class="service-icon mx-auto">
-                        <i class="fas fa-chart-line fa-3x text-purple"></i>
+                        <i class="fas fa-chart-line fa-3x text-accent"></i>
                     </div>
                     <h4 class="my-4">E-commerce Analytics</h4>
                     <p>Drive smarter business decisions with platform-agnostic e-commerce analytics. I analyze performance across multiple marketplaces and provide data-backed strategies to improve traffic, conversions, and revenue.</p>
@@ -478,7 +464,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="service-card text-center h-100">
                     <div class="service-icon mx-auto">
-                        <i class="fas fa-globe fa-3x text-purple"></i>
+                        <i class="fas fa-globe fa-3x text-accent"></i>
                     </div>
                     <h4 class="my-4">Personal Website Creation</h4>
                     <p>Design and build clean, modern, and responsive personal websites to showcase your portfolio, resume, or brand. Fully customized and optimized for all devices.</p>
