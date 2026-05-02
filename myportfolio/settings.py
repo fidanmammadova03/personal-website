@@ -16,6 +16,7 @@ DEBUG = not IS_PRODUCTION
 ALLOWED_HOSTS = []
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -41,8 +42,15 @@ TEMPLATES = [
 STATIC_URL = 'static/'
 ROOT_URLCONF = 'myportfolio.urls'
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-$3cr3t-k3y-for-dev-1234567890')
-STATICFILES_DIRS = [BASE_DIR / "main" / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '127.0.0.1,127.0.0.2,localhost').split(',')
 
