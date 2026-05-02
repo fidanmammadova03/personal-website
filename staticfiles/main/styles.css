@@ -281,9 +281,10 @@ html {
 #about .about-profile-img {
     width: 100%;
     max-width: none;
-    min-height: 680px;
-    height: auto;
+    height: min(63vw, 675px);
+    min-height: 590px;
     object-fit: cover;
+    object-position: center top;
     display: block;
 }
 
