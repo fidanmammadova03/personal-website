@@ -708,28 +708,6 @@ html {
     color: #6c757d;
 }
 
-.footer-download {
-    margin-top: 0.65rem;
-}
-
-.footer-download-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    color: #adb5bd;
-    font-size: 0.72rem;
-    text-decoration: none;
-    opacity: 0.45;
-    transition: color 0.2s ease, opacity 0.2s ease;
-}
-
-.footer-download-link:hover,
-.footer-download-link:focus {
-    color: #6c757d;
-    opacity: 0.9;
-}
 @media (max-width: 768px) {
     .navbar {
         background-color: #000 !important;
